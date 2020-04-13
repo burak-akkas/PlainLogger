@@ -1,0 +1,16 @@
+PODS:
+  - PlainLogger (0.1.0)
+
+DEPENDENCIES:
+  - PlainLogger (from `../`)
+
+EXTERNAL SOURCES:
+  PlainLogger:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PlainLogger: db5bffd839db521492e823240e288296056e2c85
+
+PODFILE CHECKSUM: 9dc2deb3094dc33b1660e644ce756d0a1b4ec912
+
+COCOAPODS: 1.8.4

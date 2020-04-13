@@ -1,0 +1,6 @@
+framework module PlainLogger {
+  umbrella header "PlainLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}

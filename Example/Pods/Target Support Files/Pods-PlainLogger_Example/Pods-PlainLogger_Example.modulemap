@@ -1,0 +1,6 @@
+framework module Pods_PlainLogger_Example {
+  umbrella header "Pods-PlainLogger_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
