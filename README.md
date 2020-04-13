@@ -1,6 +1,4 @@
 # PlainLogger
-
-[![CI Status](https://img.shields.io/travis/burak-akkas/PlainLogger.svg?style=flat)](https://travis-ci.org/burak-akkas/PlainLogger)
 [![Version](https://img.shields.io/cocoapods/v/PlainLogger.svg?style=flat)](https://cocoapods.org/pods/PlainLogger)
 [![License](https://img.shields.io/cocoapods/l/PlainLogger.svg?style=flat)](https://cocoapods.org/pods/PlainLogger)
 [![Platform](https://img.shields.io/cocoapods/p/PlainLogger.svg?style=flat)](https://cocoapods.org/pods/PlainLogger)
@@ -36,26 +34,26 @@ Configure PlainLogger preferably on your AppDelegate.
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     let configuration = PlainLogger.Configuration(
-                                            // Enable or disable logger
-                                            enabled: Bool = true, 
-                                          
-                                              // Logging level (.verbose, .info, .error, .debug)
-                                              level: Level = .verbose, 
-                                          
-                                              // Logging date format
-                                              dateFormat: String = "dd/MM/yyyy HH:mm",  
-                                          
-                                              // Enable indicators (emojis) for easy to read logging on console
-                                              indicatorsEnabled: Bool = true, 
-                                          
-                                              // Specify indicators for each logging level 
-                                              indicatorScheme: IndicatorScheme = IndicatorScheme(), 
-                                          
-                                              // Specify console logging template
-                                              consoleLoggingTemplate: String? = nil, 
-                                          
-                                              // Specify data store providers for logging
-                                              providers: [DefaultDiskDataStoreProvider()])
+                                        // Enable or disable logger
+                                        enabled: Bool = true, 
+                                      
+                                        // Logging level (.verbose, .info, .error, .debug)
+                                        level: Level = .verbose, 
+
+                                        // Logging date format
+                                        dateFormat: String = "dd/MM/yyyy HH:mm",  
+
+                                        // Enable indicators (emojis) for easy to read logging on console
+                                        indicatorsEnabled: Bool = true, 
+
+                                        // Specify indicators for each logging level 
+                                        indicatorScheme: IndicatorScheme = IndicatorScheme(), 
+
+                                        // Specify console logging template
+                                        consoleLoggingTemplate: String? = nil, 
+
+                                        // Specify data store providers for logging
+                                        providers: [DefaultDiskDataStoreProvider()])
                                           
     PlainLogger.configure(with: configuration)
     
