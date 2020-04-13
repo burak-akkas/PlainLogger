@@ -17,6 +17,7 @@
 		72D62BAD3634B8D711DAB87DBC3ACBF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		ABDC41D9A5159AFC63C1BE9B9CC3D4DF /* Pods-PlainLogger_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47E237D2652EC2062DF3A4DFA40C3806 /* Pods-PlainLogger_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C21A3B86BF2C3E8F1028DCD84AC91C0D /* DefaultDataStoreProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFDD1C52865CD2AFD11DAFA12FD270 /* DefaultDataStoreProviders.swift */; };
+		C3001594244462750064E25A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C3001593244462750064E25A /* LICENSE */; };
 		E9C1912F85BBEF5E899BB4802FAE2818 /* LogDataStoreProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984C1BC7D9DE1BB1BE22FB3883123480 /* LogDataStoreProvider.swift */; };
 		EE1067C732A01BDB36C44EAC2F05993B /* PlainLogger-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD6685BFCC1463880D68DE4C50AE151 /* PlainLogger-dummy.m */; };
 		FF23E37F82377F695AFE5B1FE0BC075A /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD3727143D66170B4B0F9F04051B1F7 /* Indicator.swift */; };
@@ -36,7 +37,6 @@
 		0B2BDEF5E6A3101D84AD258C5FAF098B /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = PlainLogger/Classes/Configuration.swift; sourceTree = "<group>"; };
 		17D0B657BA5E78B69F59EC03F9EF0C71 /* PlainLogger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PlainLogger.modulemap; sourceTree = "<group>"; };
 		1B260CBCF8EB5097F61E123E7D7F88E1 /* Pods-PlainLogger_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PlainLogger_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1BFD066FC6F953B0E2AC29CD439646BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1DD3727143D66170B4B0F9F04051B1F7 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = PlainLogger/Classes/Indicator.swift; sourceTree = "<group>"; };
 		211AE7831213FFEC8A7C8DC1C146FE47 /* Pods_PlainLogger_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlainLogger_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22332AE1FB783304096B1206BE24ACC7 /* PlainLogger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PlainLogger-Info.plist"; sourceTree = "<group>"; };
@@ -52,6 +52,7 @@
 		A987C15DA85A58D309680058FD266068 /* Pods-PlainLogger_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlainLogger_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B913A5BCA433790EE878F6C0ECD186ED /* Pods-PlainLogger_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PlainLogger_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		BB1457312AD1AB36CA05E3E7DECAF16A /* PlainLogger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PlainLogger-umbrella.h"; sourceTree = "<group>"; };
+		C3001593244462750064E25A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		CBD6685BFCC1463880D68DE4C50AE151 /* PlainLogger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PlainLogger-dummy.m"; sourceTree = "<group>"; };
 		CF972577FED840679D9C92AEA2BBD739 /* Pods-PlainLogger_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PlainLogger_Example-dummy.m"; sourceTree = "<group>"; };
 		D12F7B0CB91FC28381CB8CAFC1025D0F /* Pods-PlainLogger_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PlainLogger_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,8 +111,8 @@
 		0DA9CD5B162D99E940DE7D8DB69D4BFB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				1BFD066FC6F953B0E2AC29CD439646BB /* LICENSE */,
 				DC7B646FEC049AA071F7184DE419A463 /* PlainLogger.podspec */,
+				C3001593244462750064E25A /* LICENSE */,
 				DF7D072C4A2ECA231908711B18CCE4BB /* README.md */,
 			);
 			name = Pod;
@@ -302,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3001594244462750064E25A /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

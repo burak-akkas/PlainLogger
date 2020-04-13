@@ -1,6 +1,5 @@
 # PlainLogger
 [![Version](https://img.shields.io/cocoapods/v/PlainLogger.svg?style=flat)](https://cocoapods.org/pods/PlainLogger)
-[![License](https://img.shields.io/cocoapods/l/PlainLogger.svg?style=flat)](https://cocoapods.org/pods/PlainLogger)
 [![Platform](https://img.shields.io/cocoapods/p/PlainLogger.svg?style=flat)](https://cocoapods.org/pods/PlainLogger)
 
 ## Example
