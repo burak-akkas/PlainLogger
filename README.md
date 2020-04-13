@@ -35,28 +35,29 @@ Configure PlainLogger preferably on your AppDelegate.
 
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    let configuration = Log.Configuration(// Enable or disable logger
-                                          enabled: Bool = true, 
-                                      
-                                          // Logging level (.verbose, .info, .error, .debug)
-                                          level: Level = .verbose, 
-                                      
-                                          // Logging date format
-                                          dateFormat: String = "dd/MM/yyyy HH:mm",  
-                                      
-                                          // Enable indicators (emojis) for easy to read logging on console
-                                          indicatorsEnabled: Bool = true, 
-                                      
-                                          // Specify indicators for each logging level 
-                                          indicatorScheme: IndicatorScheme = IndicatorScheme(), 
-                                      
-                                          // Specify console logging template
-                                          consoleLoggingTemplate: String? = nil, 
-                                      
-                                          // Specify data store providers for logging
-                                          providers: [DefaultDiskDataStoreProvider()])
+    let configuration = PlainLogger.Configuration(
+                                            // Enable or disable logger
+                                            enabled: Bool = true, 
                                           
-    Log.configure(with: configuration)
+                                              // Logging level (.verbose, .info, .error, .debug)
+                                              level: Level = .verbose, 
+                                          
+                                              // Logging date format
+                                              dateFormat: String = "dd/MM/yyyy HH:mm",  
+                                          
+                                              // Enable indicators (emojis) for easy to read logging on console
+                                              indicatorsEnabled: Bool = true, 
+                                          
+                                              // Specify indicators for each logging level 
+                                              indicatorScheme: IndicatorScheme = IndicatorScheme(), 
+                                          
+                                              // Specify console logging template
+                                              consoleLoggingTemplate: String? = nil, 
+                                          
+                                              // Specify data store providers for logging
+                                              providers: [DefaultDiskDataStoreProvider()])
+                                          
+    PlainLogger.configure(with: configuration)
     
     return true
 }
@@ -65,10 +66,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ### Usage
 
 ```swift
-Log.debug(tag: "Tag debug", message: "Log debug")
-Log.error(message: "Log error")
-Log.info(message: "Log info")
-Log.verbose(message: "Log verbose")
+PlainLogger.debug(tag: "Tag debug", message: "Log debug")
+PlainLogger.error(message: "Log error")
+PlainLogger.info(message: "Log info")
+PlainLogger.verbose(message: "Log verbose")
 ```
 
 ### Advanced Configuration
@@ -89,8 +90,8 @@ let template =  "#line_break# #logger_signature# #log_level# #date#" +      // [
                 "#line_break# #indicator# Line: #line#, Column: #column#"   //  🔴 Line: 19, Column: 18
                 
 // Configure logger with given template
-let configuration = Log.Configuration(consoleLoggingTemplate: template)
-Log.configure(with: configuration)
+let configuration = PlainLogger.Configuration(consoleLoggingTemplate: template)
+PlainLogger.configure(with: configuration)
 ```
 
 #### Data Store Providers
@@ -98,8 +99,8 @@ Log.configure(with: configuration)
 PlainLogger triggers store() method on given provider(s) for every logging operation. Which are configurable by 
 
 ```swift
-let configuration = Log.Configuration(providers: [DefaultDiskDataStoreProvider()])
-Log.configure(with: configuration)
+let configuration = PlainLogger.Configuration(providers: [DefaultDiskDataStoreProvider()])
+PlainLogger.configure(with: configuration)
 ```
 
 Provides 2 different data stores by example which are DefaultHttpDataStoreProvider (POSTs log to given API path) and DefaultDiskDataStoreProvider (Stores log by user defaults) but you can implement your own data store providers by implementing LogDataStoreProvider protocol.
@@ -146,13 +147,13 @@ public class DefaultDiskDataStoreProvider: LogDataStoreProvider {
 You can configure indicator schemes through IndicatorScheme object.
 
 ```swift
-let scheme = Log.IndicatorScheme( debug: .normal,   // 🙂
-                                  info: .blue,      // 🔵
-                                  verbose: .white,  // 💀
-                                  error: .red)      // 🔴
+let scheme = PlainLogger.IndicatorScheme(   debug: .normal,   // 🙂
+                                            info: .blue,      // 🔵
+                                            verbose: .white,  // 💀
+                                            error: .red)      // 🔴
                                          
-let configuration = Log.Configuration(indicatorScheme: scheme)
-Log.configure(with: configuration)
+let configuration = PlainLogger.Configuration(indicatorScheme: scheme)
+PlainLogger.configure(with: configuration)
 ```
 
 ## Author
