@@ -35,22 +35,22 @@ Configure PlainLogger preferably on your AppDelegate.
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     let configuration = PlainLogger.Configuration(
                                         // Enable or disable logger
-                                        enabled: Bool = true, 
+                                        enabled: true,
                                       
                                         // Logging level (.verbose, .info, .error, .debug)
-                                        level: Level = .verbose, 
+                                        level: .verbose,
 
                                         // Logging date format
-                                        dateFormat: String = "dd/MM/yyyy HH:mm",  
+                                        dateFormat: "dd/MM/yyyy HH:mm",
 
                                         // Enable indicators (emojis) for easy to read logging on console
-                                        indicatorsEnabled: Bool = true, 
+                                        indicatorsEnabled: true,
 
-                                        // Specify indicators for each logging level 
-                                        indicatorScheme: IndicatorScheme = IndicatorScheme(), 
+                                        // Specify indicators for each logging level
+                                        indicatorScheme: PlainLogger.IndicatorScheme(),
 
                                         // Specify console logging template
-                                        consoleLoggingTemplate: String? = nil, 
+                                        consoleLoggingTemplate: nil,
 
                                         // Specify data store providers for logging
                                         providers: [DefaultDiskDataStoreProvider()])
